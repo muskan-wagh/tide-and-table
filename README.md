@@ -1,23 +1,18 @@
 # Tide & Table
 
-A Supabase-backed restaurant reservation demo with a flat, dark/teal SaaS-style interface.
+A restaurant website for a modern dining room in Indiranagar, Bengaluru.
+
+## What the site does
+
+- Presents the restaurant's seasonal menu, dining room, and guest experience
+- Lets guests create an account, log in, and request a table
+- Keeps reservation requests in one place for the restaurant team
+- Includes a dashboard for viewing and managing bookings
+- Works across desktop and mobile
 
 ## Pages
 
-- `/` — main restaurant experience, reservation form, and auth modal (rewritten to `olive_ember_restaurant_website.html` on Vercel)
-- `/auth/login.html` — standalone login
-- `/auth/register.html` — standalone create account
-- `/admin.html` — reservation dashboard for admin accounts
-
-## Supabase
-
-The frontend uses the publishable Supabase key. Reservation access is protected by RLS: guests can create and read their own reservations, while admin accounts can read and manage all reservations.
-
-## Deploy on Vercel
-
-1. Import this repository into Vercel.
-2. Use the **Other** framework preset.
-3. Leave the build command empty and use the repository root as the output directory.
-4. Deploy.
-
-`vercel.json` rewrites `/` to the main page so the site opens at the clean root URL.
+- `/` — restaurant home page and reservation experience
+- `/auth/login.html` — guest login
+- `/auth/register.html` — guest account creation
+- `/admin.html` — reservation dashboard
