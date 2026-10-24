@@ -3,39 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#171613" />
-    <title>Login | Olive & Ember</title>
-    <link rel="stylesheet" href="auth.css" />
-    <script src="auth.js" defer></script>
+    <meta name="theme-color" content="#07090A" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>Log in | Tide &amp; Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="auth-v2.css?v=20261024-2" />
+    <script src="auth.js?v=20261024-2" defer></script>
   </head>
   <body data-page="login">
-    <main class="auth-layout">
-      <section class="auth-visual" aria-label="Olive and Ember">
-        <a class="brand" href="../index.html">
-          <span class="brand-mark">O<span>&</span>E</span>
-          <span>OLIVE & EMBER</span>
+    <div class="auth-shell">
+      <header class="auth-top">
+        <a class="brand" href="../olive_ember_restaurant_website.html" aria-label="Tide and Table home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+              <path d="M3 15c2.5 0 3.5-2 6-2s3.5 2 6 2 3.5-2 6-2" />
+              <path d="M3 9c2.5 0 3.5-2 6-2s3.5 2 6 2 3.5-2 6-2" opacity=".55" />
+            </svg>
+          </span>
+          <span class="brand-word">Tide <em>&amp;</em> Table</span>
         </a>
 
-        <div class="visual-content">
-          <p class="eyebrow">A SEAT AT OUR TABLE</p>
-          <h1>Good food.<br />Better moments.</h1>
-          <p>Sign in to make your next dining experience special.</p>
-        </div>
+        <a class="top-link" href="../olive_ember_restaurant_website.html">
+          Back to home <span>→</span>
+        </a>
+      </header>
 
-        <p class="visual-footer">Made for moments worth sharing.</p>
-      </section>
+      <main class="auth-main">
+        <section class="auth-intro">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Welcome back</p>
+          <h1>Log in to your <em>table.</em></h1>
+          <p>
+            Reserve a table, keep your bookings in one place, and make your next
+            visit effortless.
+          </p>
+        </section>
 
-      <section class="auth-panel">
-        <a class="mobile-brand" href="../index.html"
-          >OLIVE <span>&</span> EMBER</a
-        >
-
-        <div class="auth-card">
-          <a class="back-link" href="../index.html">← Back to home</a>
-
-          <p class="eyebrow">WELCOME BACK</p>
-          <h2>Log in to your account</h2>
-          <p class="muted">Your table is just a few clicks away.</p>
+        <section class="auth-card" aria-labelledby="authHeading">
+          <div class="card-head">
+            <div>
+              <p class="card-kicker">Account</p>
+              <h2 id="authHeading">Log in</h2>
+              <p class="card-sub">Enter your details to continue.</p>
+            </div>
+            <span class="secure-pill"><span class="dot"></span> Secure</span>
+          </div>
 
           <div
             id="authMessage"
@@ -86,21 +102,30 @@
             </div>
 
             <button class="primary-btn" type="submit" id="submitBtn">
-              <span class="btn-text">Log in</span>
-              <span class="spinner" aria-hidden="true" hidden></span>
+              Log in
             </button>
           </form>
 
           <p class="switch-auth">
             Don't have an account?
-            <a href="register.html">Create an account</a>
+            <a href="register.html?v=20261024-2">Create one</a>
           </p>
 
           <p class="legal-note">
             By continuing, you agree to our applicable terms and privacy policy.
           </p>
-        </div>
-      </section>
-    </main>
+        </section>
+
+        <p class="auth-perks">
+          Book in under a minute <span>·</span> Keep every reservation
+          <span>·</span> Manage your details
+        </p>
+      </main>
+
+      <footer class="auth-foot">
+        <span>© 2026 Tide &amp; Table</span>
+        <span class="foot-status"><span class="dot"></span> Secure sign-in</span>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,8 +1,8 @@
 "use strict";
 
-const SUPABASE_URL = "https://aekjuckxxiholzuayzig.supabase.co";
+const SUPABASE_URL = "https://eqebnwpzbszjdntbjbpw.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY =
-  "sb_publishable_nhhqo9NzsDLG5Bg2mNILdg_4uP2M0Rc";
+  "sb_publishable_zMAsFQHJfrIkaZFQi5wlDQ_5qtEa8du";
 
 const authForm = document.getElementById("authForm");
 const authMessage = document.getElementById("authMessage");

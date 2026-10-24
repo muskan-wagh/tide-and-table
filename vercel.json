@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/olive_ember_restaurant_website.html"
+    }
+  ]
+}
